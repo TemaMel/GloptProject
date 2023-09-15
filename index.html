@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GLOPT</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -23,29 +24,29 @@
                     </div> -->
                     <ul class="main__list">
                         <li class="main__item">
-                            <a href="#">Преимущества</a>
+                            <a href="#adv">Преимущества</a>
                         </li>
                         <li class="main__item">
-                            <a href="#">Наши работы</a>
+                            <a href="#motiv">Наши работы</a>
                         </li>
                         <li class="main__item">
-                            <a href="#">Цены</a>
+                            <a href="#pr">Цены</a>
                         </li>
                         <li class="main__item">
-                            <a href="#">Схема работы</a>
+                            <a href="#sch">Схема работы</a>
                         </li>
                         <li class="main__item">
-                            <a href="#">Отзывы</a>
+                            <a href="#rev">Отзывы</a>
                         </li>
                         <li class="main__item">
-                            <a href="#">Контакты</a>
+                            <a href="#mp" >Контакты</a>
                         </li>
                     </ul>
                     <div class="main__contacts">
                         <span>Есть вопросы?</span>
                         <a href="tel:79264210100" class="main__tel">+7(926)421 01 00</a>
                     </div>
-                    <button class="button button_main">ПЕРЕЗВОНИТЕ МНЕ</button>
+                    <button class="button button_main" data-modal="consultation">ПЕРЕЗВОНИТЕ МНЕ</button>
                 </nav>
                 <div class="main__descr">
                     Global Opt - логистика полного цикла из Китая в Россию
@@ -83,11 +84,11 @@
                         </div>
                     </div>
                 </div>
-                <button class="button button_big">ПОЛУЧИТЬ РАСЧЕТ</button>
+                <a href="#pr" class="button button_big">Получить расчет</a>
             </div>
         </section>
         
-        <section class="advantages">
+        <section class="advantages" id="adv">
             <div class="container">
                 <h2 class="title">
                     Преимущества работы с GlobalOpt
@@ -201,7 +202,7 @@
             </div>
         </section>
 
-        <section class="motivation">
+        <section class="motivation" id="motiv">
             <div class="container">
                 <h2 class="title">
                     Наша работа - больше чем просто доставка
@@ -254,7 +255,7 @@
             </div>
         </section>
 
-        <section class="price">
+        <section class="price" id="pr">
             <div class="container">
                 <h2 class="title">
                     Цены на любой вариант доставки
@@ -336,13 +337,13 @@
                     <div class="price__consultation-icon">
                         <img src="icons/price/consulic.png" alt="consultationic">
                     </div>
-                    <form action="#" class="price__consultation-form">
+                    <form action="#" class="form price__consultation-form" id="price_form">
                         <input type="text" name="name" required placeholder="Ваше имя...">
                         <input type="tel" name="tel" required placeholder="Ваш номер телефона...">
                         <input type="email" name="email" required placeholder="Ваш e-mail...">
                     </form>
                     <div class="price__consultation-btn">
-                        <button type="submit" class="button button_cons">
+                        <button form="price_form" type="submit" class="button button_cons">
                             Отправить заявку
                         </button>
                     </div>
@@ -362,7 +363,7 @@
             </div>
         </section>
 
-        <section class="scheme">
+        <section class="scheme" id="sch">
             <div class="container">
                 <h2 class="title">
                     Схема работы с нами
@@ -435,70 +436,78 @@
             </div>
         </section>
 
-        <section class="reviews">
+        <section class="reviews" id="rev">
             <h2 class="title">Отзывы наших клиентов</h2>
             <div class="divider"></div>
             <div class="reviews__subtitle">
                 Мы всегда стараемся помочь клиентам, что бы они обращались к нам снова
             </div>
-            <div class="slider">
-                <div class="slider__item">
-                    <div>
-                        <img src="IMG/reviews/img1.png" alt="reviews1">
+            <div class="slider swiper-container">
+                <div class="slider__wrapper swiper-wrapper">
+                    <div class="slider__item swiper-slide">
+                        <div>
+                            <img src="IMG/reviews/img1.png" alt="reviews1">
+                        </div>
+                        <div class="slider__title">
+                            Анисимова Ольга
+                        </div>
+                        <div class="slider__descr">
+                            Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании.
+                        </div>
                     </div>
-                    <div class="slider__title">
-                        Анисимова Ольга
+                    <div class="slider__item swiper-slide">
+                        <div>
+                            <img src="IMG/reviews/img1.png" alt="reviews1">
+                        </div>
+                        <div class="slider__title">
+                            Анисимова Ольга
+                        </div>
+                        <div class="slider__descr">
+                            Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании.
+                        </div>
                     </div>
-                    <div class="slider__descr">
-                        Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании.
+                    <div class="slider__item swiper-slide">
+                        <div>
+                            <img src="IMG/reviews/img1.png" alt="reviews1">
+                        </div>
+                        <div class="slider__title">
+                            Анисимова Ольга
+                        </div>
+                        <div class="slider__descr">
+                            Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании.
+                        </div>
                     </div>
-                </div>
-                <div class="slider__item">
-                    <div>
-                        <img src="IMG/reviews/img1.png" alt="reviews1">
+                    <div class="slider__item swiper-slide">
+                        <div>
+                            <img src="IMG/reviews/img1.png" alt="reviews1">
+                        </div>
+                        <div class="slider__title">
+                            Анисимова Ольга
+                        </div>
+                        <div class="slider__descr">
+                            Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании.
+                        </div>
                     </div>
-                    <div class="slider__title">
-                        Анисимова Ольга
-                    </div>
-                    <div class="slider__descr">
-                        Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании.
-                    </div>
-                </div>
-                <div class="slider__item">
-                    <div>
-                        <img src="IMG/reviews/img1.png" alt="reviews1">
-                    </div>
-                    <div class="slider__title">
-                        Анисимова Ольга
-                    </div>
-                    <div class="slider__descr">
-                        Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании.
-                    </div>
-                </div>
-                <div class="slider__item">
-                    <div>
-                        <img src="IMG/reviews/img1.png" alt="reviews1">
-                    </div>
-                    <div class="slider__title">
-                        Анисимова Ольга
-                    </div>
-                    <div class="slider__descr">
-                        Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании.
-                    </div>
-                </div><div class="slider__item">
-                    <div>
-                        <img src="IMG/reviews/img1.png" alt="reviews1">
-                    </div>
-                    <div class="slider__title">
-                        Анисимова Ольга
-                    </div>
-                    <div class="slider__descr">
-                        Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании.
+                    <div class="slider__item swiper-slide">
+                        <div>
+                            <img src="IMG/reviews/img1.png" alt="reviews1">
+                        </div>
+                        <div class="slider__title">
+                            Анисимова Ольга
+                        </div>
+                        <div class="slider__descr">
+                            Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании.
+                        </div>
                     </div>
                 </div>
             </div>
-            <button class="btnPrev"><img src="IMG/reviews/prevArrow.png" alt="btnPrev"></button>
-            <button class="btnNext"><img src="IMG/reviews/nextArrow.png" alt="btnNext"></button>
+            <div class="swiper-button-prev btnPrev">
+                <!-- <img src="IMG/reviews/prevArrow.png" alt="btnPrev"> -->
+            </div>
+            <div class="swiper-button-next btnNext">
+                <!-- <img src="IMG/reviews/nextArrow.png" alt="btnNext"> -->
+            </div>
+            <div class="swiper-pagination"></div>
         </section>
 
         <section class="consultation">
@@ -527,7 +536,7 @@
             </div>
         </section>
 
-        <section class="map">
+        <section class="map" id="mp">
             <div class="container">
                 <div class="map__wrapper">
                     <div class="map__title">
@@ -562,7 +571,7 @@
                                 +7(926)421 01 00
                             </a>
                         </div>
-                        <button class="button button_footer footer__button">
+                        <button class="button button_footer footer__button" data-modal="consultation">
                             Перезвоните мне
                         </button>
                     </div>  
@@ -587,9 +596,43 @@
 
             </div>
         </footer>
-    </div>
-    
 
+        <div class="overlay">
+            <div class="modal" id="consultation">
+                <div class="modal__close">
+                    ×
+                </div>
+                <div class="modal__title">
+                    Заполните форму зявки
+                </div>
+                <div class="modal__subtitle">
+                    и мы перезвоним вам в течении 10 минут
+                </div>
+                <form action="#" class="form modal__form">
+                    <input type="text" name="name" placeholder="Ваше имя..." required>
+                    <input name="phone" placeholder="Ваш номер телефона..." required>
+                    <input type="email" name="email" placeholder="Ваша почта..." required>
+                    <button class="button button_modal modal__button">Заказать звонок</button>
+                </form>
+            </div>
+            <div class="modal modal_mini" id="thanks">
+                <div class="modal__close">
+                    ×
+                </div>
+                <div class="modal__title">
+                    Спасибо за вашу заявку!
+                </div>
+                <div class="modal__subtitle">
+                    Наш менеджер свяжется с вами в ближайшее время
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
