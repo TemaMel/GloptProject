@@ -1,0 +1,192 @@
+.price {
+    padding: 58px 0 70px 0;
+    &__subtitle {
+        font-size: 21px;
+        font-weight: 300;
+        text-align: center;
+    }
+    &__wrapper {
+        display: grid;
+        margin-top: 35px;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, 265px);
+        grid-template-rows: repeat(auto-fit, 355px);
+        column-gap: 20px;
+    }
+    &__item {
+        padding: 1px;
+        width: 265px;
+        height: 355px;
+        border: 1px solid #2e2e2e;
+        &-header {
+            padding-top: 24px;
+            width: 265px;
+            height: 47px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 23px;
+            background-color: #25333c;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        img {
+            display: block;
+            margin: 14px auto;
+        }
+        &-text {
+            text-align: center;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        &-cash {
+            color: $main-color;
+            font-size: 28px;
+            text-align: center;
+            line-height: 30px;
+        }
+        span {
+            display: block;
+            margin-top: 8px;
+            text-align: center;
+            font-weight: 20px;
+            font-size: 14px;
+        }
+    }
+    &__consultation {
+        position: relative;
+        display: flex;
+        max-width: 1140px;
+        min-height: 166px;
+        border: 2px solid gray;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &-header {
+            display: block;
+            margin: 60px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: 400;
+        }
+        &-form {
+            justify-content: center;
+            margin-top: 17px;
+            input {
+                width: 268px;
+                height: 45px;
+                padding-left: 28px;
+                border-radius: 25px;
+                border: 1px solid gray;
+                font-size: 13px;
+            }
+        }
+        &-icon {
+            position: absolute;
+            // transform: translateX(300%) translateY(-85%);
+            right: 45%;
+            transform: translateY(-85%);
+            width: 122px;
+            height: 102px;
+            background-color: #fff;
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        &-btn {
+            position: absolute;
+            width: 204px;
+            height: 45px;
+            background-color: #fff;
+            right: 40.5%;
+            // transform: translateY(185%);
+            bottom: -12%
+        }
+    }
+}
+
+
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .price {
+        &__wrapper {
+            row-gap: 20px;
+        }
+        &__consultation {
+            &-form {
+                input {
+                    width: 200px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .price {
+        &__consultation {
+            &-btn {
+                right: 39%;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .price {
+        &__consultation {
+            height: 270px;
+            &-form {
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                input {
+                    margin-top: 5px;
+                }
+            }
+            &-icon {
+                top: 10%;
+                right: 40%;
+            }
+            &-btn {
+                right: 31%;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+    }
+    .price {
+        &__subtitle {
+            font-size: 16px;
+        }
+        &__consultation {
+            &-header {
+                margin: 60px 5px;
+                font-size: 21px;
+            }
+            &-icon {
+                top: 13%;
+                right: 34%;
+            }
+            &-btn {
+                right: 23%;
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.btnPrev {
+    color: $main-color;
+    position: absolute;
+    background-color: #fff;
+    border: none;
+    top: 42%;
+    left: 41%;
+    cursor: pointer;
+}
+.btnNext {
+    color: $main-color;
+    position: absolute;
+    background-color: #fff;
+    border: none;
+    top: 42%;
+    right: 40%;
+    cursor: pointer;
+}
+.hidden {
+    display: none;
+}
+
+.swiper-pagination {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}

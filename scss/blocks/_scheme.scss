@@ -1,0 +1,35 @@
+.scheme {
+    background: url('../IMG/scheme/scheme_bg.png');
+    padding: 50px 0 29px 0;
+    &__wrapper {
+        margin-top: 22px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+        row-gap: 47px;
+    }
+    &__item {
+        width: 263px;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    &__subtitle {
+        color: $main-color;
+        text-align: center;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 700;
+        margin-top: 12px;
+    }
+    &__descr {
+        font-size: 14px;
+        text-align: center;
+        line-height: 20px;
+        font-weight: 300;
+        margin-top: 13px;
+    }
+}

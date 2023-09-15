@@ -1,0 +1,32 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+@import 'base/variables';
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.overflow {
+    overflow: hidden
+}
+
+@import 'blocks/divider';
+@import 'blocks/buttons';
+@import 'blocks/title';
+
+
+@import 'blocks/main';
+@import 'blocks/advantages';
+@import 'blocks/motivation';
+@import 'blocks/agent';
+@import 'blocks/price';
+@import 'blocks/manager';
+@import 'blocks/scheme';
+@import 'blocks/reviews';
+@import 'blocks/slider';
+@import 'blocks/consultation';
+@import 'blocks/map';
+@import 'blocks/footer';
+@import 'blocks/modal';

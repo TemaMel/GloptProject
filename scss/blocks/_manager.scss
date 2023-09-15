@@ -1,0 +1,51 @@
+.manager {
+    background: url('../IMG/manager/manager_bg.png') no-repeat center/cover;
+    min-height: 342px;
+    width: 100%;
+    padding: 58px 0 0 0;
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+    &__title {
+        color: #fff;
+        margin-top: 17px;
+        font-size: 26px;
+        text-align: center;
+    }
+    &__descr {
+        color: #fff;
+        font-weight: 300;
+        font-size: 19px;
+        line-height: 27px;
+        text-align: center;
+        margin-top: 13px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+    }
+}
