@@ -1,8 +1,6 @@
 .consultation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 438px;
+    padding-top: 60px;
+    min-height: 378px;  
     width: 100%;
     background: url('../IMG/consultation/consultation_bg.png') no-repeat center/cover;
     &__wrapper {
@@ -78,9 +76,11 @@
         max-width: 720px;
     }
     .consultation {
+        padding: 23px 0 0 0;
+        min-height: 438px;
         &__wrapper {
             padding-bottom: 15px;
-            width: 600px;
+            width: 450px;
         }
         &__forms{
             &-wrapper {
@@ -102,11 +102,6 @@
 @media (max-width: 768px) {
     .container {
         max-width: 540px;
-    }
-    .consultation {
-        &__wrapper {
-            width: 500px;
-        }
     }
 }
 

@@ -43,6 +43,7 @@
   background-color: #fa401f;
 }
 .button_main {
+  width: 160px;
   margin-top: 26px;
   margin-left: 19px;
 }
@@ -54,7 +55,8 @@
   width: 230px;
   height: 57px;
   font-size: 15px;
-  margin-top: 40px;
+  margin-top: 50px;
+  text-decoration: none;
 }
 .button_price {
   margin: 24px auto;
@@ -90,7 +92,7 @@
 .main {
   position: relative;
   background: url("../IMG/main/main_bg.png") no-repeat center/cover;
-  min-height: 680px;
+  height: 100vh;
   width: 100%;
   padding: 23px 0 0 0;
   align-items: center;
@@ -159,6 +161,7 @@
   color: #fff;
   font-size: 24px;
   font-weight: 300;
+  margin-top: 30px;
 }
 .main h1 {
   color: #ec644b;
@@ -192,6 +195,7 @@
     max-width: 960px;
   }
   .main {
+    height: 750px;
     padding-bottom: 20px;
   }
   .main__wrapper {
@@ -227,12 +231,6 @@
   }
   .main__nav {
     justify-content: space-around;
-  }
-  .main__nav:nth-child(2) {
-    justify-content: flex-end;
-  }
-  .main__nav:last-child {
-    justify-content: flex-end;
   }
   .main h1 {
     font-size: 60px;
@@ -274,6 +272,9 @@
   .title_fz42 {
     font-size: 36px;
   }
+  .main {
+    padding: 23px 0 60px 0;
+  }
   .main__descr {
     margin-top: 15px;
   }
@@ -291,6 +292,9 @@
   .title_fz42 {
     font-size: 30px !important;
   }
+  .main {
+    min-height: 800px;
+  }
   .main h1 {
     font-size: 40px;
   }
@@ -306,6 +310,9 @@
   .button_main {
     margin: 10px auto !important;
     margin-top: 10px;
+  }
+  .main {
+    min-height: 1150px;
   }
   .main h1 {
     font-size: 30px;
@@ -635,7 +642,7 @@
   width: 204px;
   height: 45px;
   background-color: #fff;
-  right: 40.5%;
+  right: 41%;
   bottom: -12%;
 }
 
@@ -898,10 +905,8 @@
 }
 
 .consultation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 438px;
+  padding-top: 60px;
+  min-height: 378px;
   width: 100%;
   background: url("../IMG/consultation/consultation_bg.png") no-repeat center/cover;
 }
@@ -971,9 +976,13 @@
   .container {
     max-width: 720px;
   }
+  .consultation {
+    padding: 23px 0 0 0;
+    min-height: 438px;
+  }
   .consultation__wrapper {
     padding-bottom: 15px;
-    width: 600px;
+    width: 450px;
   }
   .consultation__forms-wrapper {
     grid-template-columns: repeat(auto-fit, 350px);
@@ -988,9 +997,6 @@
 @media (max-width: 768px) {
   .container {
     max-width: 540px;
-  }
-  .consultation__wrapper {
-    width: 500px;
   }
 }
 @media (max-width: 576px) {
@@ -1082,9 +1088,6 @@
 @media (max-width: 576px) {
   .container {
     width: 100%;
-  }
-  .map {
-    display: none;
   }
 }
 .footer {
